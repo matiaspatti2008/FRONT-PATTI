@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kustom: marca argentina de ropa streetwear. Ropa urbana hecha para durar.">
+  <title>Kustom | Streetwear Argentina</title>
+
+  <!-- Tipografía de la marca: Roboto Condensed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="encabezado__marca">
+      <!-- Logo: la "K" modificada (imagen) + el resto del nombre en itálica -->
+      <a class="logo" href="#inicio" aria-label="Kustom, ir al inicio">
+        <img class="logo__imagen" src="img/logo-kustom.png" alt="K de Kustom" width="70" height="74">
+        <span class="logo__texto">ustom</span>
+      </a>
+      <h1 class="encabezado__titulo">Streetwear Argentina</h1>
+    </div>
+
+    <ul class="anuncios">
+      <li>Envío gratis a partir de $150.000</li>
+      <li>3 cuotas sin interés</li>
+      <li>10% off en transferencia bancaria</li>
+    </ul>
+
+    <div class="barra">
+      <nav class="menu" aria-label="Menú principal">
+        <ul class="menu__lista">
+          <li><a class="menu__enlace" href="#inicio">Inicio</a></li>
+          <li><a class="menu__enlace" href="#colecciones">Colecciones</a></li>
+          <li><a class="menu__enlace" href="#galeria">Galería</a></li>
+          <li><a class="menu__enlace" href="#nosotros">Nosotros</a></li>
+          <li><a class="menu__enlace" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <form class="buscador" role="search" action="#">
+        <label for="buscar" hidden>Buscar</label>
+        <input class="campo" type="search" id="buscar" name="buscar" placeholder="Buscar">
+      </form>
+
+      <a class="carrito" href="#colecciones">Carrito (0)</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 01 - Presentación -->
+    <section class="hero" id="inicio">
+      <img class="hero__imagen" src="img/hero-new-drop.jpg"
+           alt="Campera negra con capucha y jean baggy desteñido de Kustom sobre fondo de cemento" width="1422" height="800" fetchpriority="high">
+      <div class="hero__contenido">
+
+        <h2 class="hero__titulo">New drop</h2>
+        <p>
+          Kustom es una marca de ropa streetwear hecha en Argentina. Con cada drop sacamos
+          prendas nuevas, en cantidades limitadas, pensadas para la calle y para el día a día.
+          Mirá las colecciones y elegí la tuya.
+        </p>
+        <a class="boton" href="#colecciones">Ver colecciones <span class="hero__flecha" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <!-- 02 - Colecciones (tarjetas) -->
+    <section class="seccion" id="colecciones">
+
+      <h2 class="seccion__titulo">Colecciones</h2>
+
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <div class="tarjeta__fotos">
+            <img class="tarjeta__imagen" src="img/remera-1.jpg"
+                 alt="Remera negra lavada con estampa blanca difuminada y el logo de Kustom abajo a la derecha" width="800" height="1067" loading="lazy">
+            <img class="tarjeta__imagen tarjeta__imagen--alterna" src="img/remera-2.jpg"
+                 alt="Remera negra lavada con estampa de un rostro azul, texto rojo y el logo de Kustom en la manga" width="800" height="1066" loading="lazy">
+          </div>
+          <div class="tarjeta__cuerpo">
+            <h3 class="tarjeta__titulo">Remeras</h3>
+            <p class="tarjeta__texto">Remeras oversize de algodón lavado, con estampas propias y el logo de Kustom en el diseño.</p>
+            <a class="boton" href="#contacto">Consultar</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta__fotos">
+            <img class="tarjeta__imagen" src="img/buzo-zip-adelante.jpg"
+                 alt="Buzo negro con cierre y capucha forrada a cuadros, con el logo de Kustom en el pecho y en la manga" width="800" height="1067" loading="lazy">
+            <img class="tarjeta__imagen tarjeta__imagen--alterna" src="img/buzo-zip-atras.jpg"
+                 alt="Buzo negro con cierre y capucha, visto de espalda" width="470" height="627" loading="lazy">
+          </div>
+          <div class="tarjeta__cuerpo">
+            <h3 class="tarjeta__titulo">Buzos con cierre</h3>
+            <p class="tarjeta__texto">Buzo con cierre y capucha forrada a cuadros, con el logo de Kustom en el pecho y en la manga.</p>
+            <a class="boton" href="#contacto">Consultar</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta__fotos">
+            <img class="tarjeta__imagen" src="img/campera-zip.jpg"
+                 alt="Campera negra con capucha y aspecto desgastado, con el logo de Kustom en el bolsillo" width="800" height="1067" loading="lazy">
+          </div>
+          <div class="tarjeta__cuerpo">
+            <h3 class="tarjeta__titulo">Camperas</h3>
+            <p class="tarjeta__texto">Campera negra con capucha y un acabado desgastado, pensada para el frío.</p>
+            <a class="boton" href="#contacto">Consultar</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta__fotos">
+            <img class="tarjeta__imagen" src="img/jean-baggy-2-adelante.jpg"
+                 alt="Jean baggy azul oscuro con una bandera estampada en la pierna y una cadena con cruces" width="534" height="712" loading="lazy">
+            <img class="tarjeta__imagen tarjeta__imagen--alterna" src="img/jean-baggy-2-atras.jpg"
+                 alt="Jean baggy azul oscuro visto de espalda, con el logo de Kustom en el bolsillo" width="528" height="704" loading="lazy">
+          </div>
+          <div class="tarjeta__cuerpo">
+            <h3 class="tarjeta__titulo">Jeans baggy estampado</h3>
+            <p class="tarjeta__texto">Jean baggy azul oscuro con estampas gráficas y una cadena con cruces dibujada.</p>
+            <a class="boton" href="#contacto">Consultar</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta__fotos">
+            <img class="tarjeta__imagen" src="img/jean-baggy-1.jpg"
+                 alt="Jean baggy desteñido con letras blancas estampadas a lo largo de la pierna" width="528" height="704" loading="lazy">
+          </div>
+          <div class="tarjeta__cuerpo">
+            <h3 class="tarjeta__titulo">Jeans baggy desteñido</h3>
+            <p class="tarjeta__texto">Jean baggy con lavado desteñido y letras estampadas a lo largo de la pierna.</p>
+            <a class="boton" href="#contacto">Consultar</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta__fotos">
+            <img class="tarjeta__imagen" src="img/bermuda-adelante.jpg"
+                 alt="Bermuda de jean desgastada con estampa roja ovalada al frente y el logo de Kustom" width="528" height="704" loading="lazy">
+            <img class="tarjeta__imagen tarjeta__imagen--alterna" src="img/bermuda-atras.jpg"
+                 alt="Bermuda de jean desgastada vista de espalda, con el logo de Kustom" width="528" height="704" loading="lazy">
+          </div>
+          <div class="tarjeta__cuerpo">
+            <h3 class="tarjeta__titulo">Bermudas</h3>
+            <p class="tarjeta__texto">Bermudas de jean anchas, con lavado desgastado y una estampa roja al frente.</p>
+            <a class="boton" href="#contacto">Consultar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 - Beneficios -->
+    <section class="seccion seccion--destacada" id="beneficios">
+
+      <h2 class="seccion__titulo">Comprar en Kustom</h2>
+      <ul class="beneficios__lista">
+        <li class="beneficio">
+          <h3>Envíos gratis a todo el país</h3>
+          <p>En compras mayores a $150.000</p>
+        </li>
+        <li class="beneficio">
+          <h3>3 cuotas sin interés</h3>
+          <p>Con todas las tarjetas</p>
+        </li>
+        <li class="beneficio">
+          <h3>10% off en transferencia</h3>
+          <p>Con todos los bancos</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 04 - Galería (sección con imágenes) -->
+    <section class="seccion" id="galeria">
+
+      <h2 class="seccion__titulo">Lookbook</h2>
+      <div class="lookbook">
+        <figure class="lookbook__foto">
+          <img class="lookbook__imagen" src="img/look-1.jpg" alt="Maniquí con remera negra de estampa blanca difuminada y bermuda de jean desgastada de Kustom" width="880" height="1205" loading="lazy">
+          <figcaption class="lookbook__texto">Look 1 — Remera estampada y bermuda de jean</figcaption>
+        </figure>
+        <figure class="lookbook__foto">
+          <img class="lookbook__imagen" src="img/look-2.jpg" alt="Maniquí con remera negra de estampa azul y jean baggy con una bandera estampada de Kustom" width="896" height="1181" loading="lazy">
+          <figcaption class="lookbook__texto">Look 2 — Remera con estampa azul y jean baggy</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 05 - Sobre nosotros (información sobre el tema) -->
+    <section class="seccion seccion--destacada" id="nosotros">
+
+      <h2 class="seccion__titulo">Kustom</h2>
+      <h3>Qué es el streetwear</h3>
+      <p>
+        El streetwear, o ropa de calle, nació en Estados Unidos con la mezcla de culturas
+        como el skate, el surf, el graffiti y el punk. Es un estilo cómodo y auténtico, donde
+        la ropa sirve para mostrar quién sos.
+      </p>
+      <h3>Por qué existe Kustom</h3>
+      <p>
+        Hacemos ropa urbana argentina, pensada para durar y con diseños propios.
+        Nos gusta la moda y la estética de la calle, y queremos que cada prenda
+        te ayude a expresar tu identidad.
+      </p>
+    </section>
+
+    <!-- 06 - Dónde encontrarnos -->
+    <section class="seccion local" id="local">
+
+      <h2 class="seccion__titulo">Local</h2>
+      <p>Nuestro local está en el AMBA. <a href="#contacto">Escribinos</a> y te pasamos la dirección y los horarios.</p>
+    </section>
+
+    <!-- 07 - Datos destacados -->
+    <section class="seccion seccion--destacada" id="datos">
+
+      <h2 class="seccion__titulo">Kustom en números</h2>
+      <ul class="datos__lista">
+        <li class="dato"><strong class="dato__numero">100%</strong> <span class="dato__texto">Producción nacional</span></li>
+        <li class="dato"><strong class="dato__numero">12+</strong> <span class="dato__texto">Drops por año</span></li>
+        <li class="dato"><strong class="dato__numero">320g</strong> <span class="dato__texto">Algodón premium</span></li>
+        <li class="dato"><strong class="dato__numero">5K+</strong> <span class="dato__texto">Clientes en el país</span></li>
+      </ul>
+    </section>
+
+    <!-- 08 - Recursos y comunidad (enlaces externos) -->
+    <section class="seccion" id="comunidad">
+
+      <h2 class="seccion__titulo">Comunidad</h2>
+      <ul class="recursos">
+        <li class="recurso">
+          <h3 class="recurso__titulo">Instagram</h3>
+          <a class="recurso__enlace" href="https://www.instagram.com/kustom.arg" target="_blank" rel="noopener noreferrer">@kustom.arg</a>
+          <p>Drops y contenido de la comunidad.</p>
+        </li>
+        <li class="recurso">
+          <h3 class="recurso__titulo">TikTok</h3>
+          <a class="recurso__enlace" href="https://www.tiktok.com/@kustomarg" target="_blank" rel="noopener noreferrer">@kustomarg</a>
+          <p>Videos y detrás de escena.</p>
+        </li>
+        <li class="recurso">
+          <h3 class="recurso__titulo">Investigar</h3>
+          <a class="recurso__enlace" href="https://en.wikipedia.org/wiki/Streetwear" target="_blank" rel="noopener noreferrer" hreflang="en">Streetwear (Wikipedia, en inglés)</a>
+          <p>Historia del movimiento global.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 09 - Contacto -->
+    <section class="seccion seccion--destacada contacto" id="contacto">
+
+      <h2 class="seccion__titulo">Escribinos</h2>
+      <form class="contacto__formulario" action="#" method="post">
+        <label for="email" hidden>Tu email</label>
+        <input class="campo" type="email" id="email" name="email" placeholder="Tu email" required>
+        <button class="boton" type="submit">Enviar</button>
+      </form>
+      <p><a href="mailto:info@kustom.com.ar">info@kustom.com.ar</a></p>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="pie__contenido">
+      <div>
+        <a class="logo logo--pie" href="#inicio" aria-label="Kustom, ir al inicio">
+          <img class="logo__imagen" src="img/logo-kustom.png" alt="K de Kustom" width="70" height="74">
+          <span class="logo__texto">ustom</span>
+        </a>
+        <p>Ropa urbana argentina. Hecha para durar.</p>
+      </div>
+
+      <nav aria-label="Menú del pie de página">
+        <h2 class="pie__titulo">Navegación</h2>
+        <ul class="pie__lista">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#colecciones">Colecciones</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="pie__titulo">Trabajo práctico</h2>
+        <ul class="pie__lista">
+          <li>Alumno: Matías Agustin Patti </li>
+          <li>Curso: 3° CSTC</li>
+          <li>Institución: Politecnico Modelo</li>
+          <li>Año: 2026</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie__legal">
+      <p>© 2026 Kustom Argentina</p>
+      <p>Trabajo práctico — Diseño Web</p>
+    </div>
+  </footer>
+
+</body>
+</html>
